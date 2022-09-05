@@ -1,0 +1,52 @@
+body {
+    min-height: 100vh;
+    background: url('./images/black-bcg.jpeg')center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    flex: 0 0 70%;
+    min-height: 80vh;
+    border: 2px solid #fff;
+    background: url('./images/09.jpeg')center/cover no-repeat;
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px #fff;
+    position: relative;
+}
+
+button {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    font-family: cursive;
+    font-size: 1rem;
+    border: 3px solid blue;
+    border-radius: 7px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: #fff;
+    background: #333;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    /* left: -25px; */
+    /* A better solution */
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    /* right: -35px; */
+    /*A  better solution */
+    right: 0;
+    transform: translate(50%, -50%);
+}
